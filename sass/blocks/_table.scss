@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+## Table
+--------------------------------------------------------------*/
+
+.wp-block-table {
+  overflow-x: auto;
+  margin-left: 14px;
+  margin-right: 14px;
+  width: calc( 100% - 28px );
+}
+
+.wp-block-table table {
+  border-collapse: collapse;
+  width: 100%
+}
+
+.wp-block-table td, .wp-block-table th {
+  padding: .5em;
+}
+
+@media screen and (min-width: $default-min-width) {
+  .wp-block-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}

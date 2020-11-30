@@ -1,0 +1,13 @@
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+@import "typography/typography";
+
+.wp-block {
+    max-width: $default-content-width;
+    font-family: $font__main;
+}
+
+.editor-post-title__block,
+.editor-post-title__input {
+    font-family: $font__main;
+}

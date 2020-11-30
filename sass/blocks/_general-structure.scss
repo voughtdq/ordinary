@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+## General Structure
+--------------------------------------------------------------*/
+
+.entry-content > * {
+  margin: 0 auto 1.5rem auto;
+  max-width: $default-content-width;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.entry-content > .alignwide {
+  max-width: 1070px;
+}
+
+.entry-content > .alignfull {
+  margin: 1.5em 0;
+  max-width: 100%;
+}
+
+@media screen and (min-width: $default-min-width) {
+  .entry-content > * {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.entry-divider {
+    border-bottom: 1px solid #CCC;
+    max-width: $default-content-width;
+    margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+## Code
+--------------------------------------------------------------*/
+
+.wp-block-code {
+  padding: 0.8em 1em;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+@media screen and (min-width: $default-min-width) {
+  .wp-block-code {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

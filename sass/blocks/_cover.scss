@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+## Cover
+--------------------------------------------------------------*/
+
+.wp-block-cover-text p {
+  padding: 1.5em 14px;
+}
+
+@media screen and (min-width: $default-min-width) {
+  .wp-block-cover-text p {
+    padding: 1.5em 0;
+  }
+}

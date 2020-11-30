@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+## Group
+--------------------------------------------------------------*/
+
+.wp-block-group > .wp-block-group__inner-container > * {
+  max-width: $default-content-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-block-group > .wp-block-group__inner-container > .alignwide {
+  max-width: 1070px;
+}
+
+.wp-block-group > .wp-block-group__inner-container > .alignfull {
+  max-width: 100%;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > :first-child {
+  margin-top: 0;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > .alignfull {
+  width: calc( 100% + 60px );
+  max-width: calc( 100% + 60px );
+  position: relative;
+  left: -30px;
+}

@@ -1,0 +1,35 @@
+.sticky {
+    display: block;
+}
+
+.post,
+.page {
+    margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+/*.page-content,
+.entry-content,
+.entry-summary {
+        margin: 1.5em 0 0;
+}*/
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.cat-links, .tags-links, .edit-link {
+    margin-right: 1rem;
+}
+
+.post-thumbnail img {
+    @include center-block;
+}
+
+.post-thumbnail {
+    margin-bottom: 1.5em;
+}
