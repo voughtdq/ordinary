@@ -191,10 +191,20 @@ function ordinary_fix_audio_shortcode_atts( $out, $pairs, $atts, $shortcode) {
     return $out;
 } */
 
-add_filter( 'wp_audio_shortcode', 'ordinary_fix_audio_shortcode_html_output', 10, 5);
-
 
 function ordinary_fix_audio_shortcode_html_output( $html, $atts, $audio, $post_id, $library) {
     $html = '<div class="audio-container">' . $html . '</div>';
     return $html;
 }
+
+add_filter( 'wp_audio_shortcode', 'ordinary_fix_audio_shortcode_html_output', 10, 5);
+
+function ordinary_use_minified_stylesheet_in_production( $stylesheet, $stylesheet_dir ) {
+    if ( defined( WP_DEBUG ) && ! WP_DEBUG ) {
+        $stylesheet = $stylesheet_dir . '/style.min.css';
+    }
+
+    return $stylesheet;
+}
+
+add_filter( 'stylesheet_uri', 'ordinary_use_minified_stylesheet_in_production', 10, 2);
