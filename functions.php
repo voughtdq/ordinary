@@ -200,7 +200,7 @@ function ordinary_fix_audio_shortcode_html_output( $html, $atts, $audio, $post_i
 add_filter( 'wp_audio_shortcode', 'ordinary_fix_audio_shortcode_html_output', 10, 5);
 
 function ordinary_use_minified_stylesheet_in_production( $stylesheet, $stylesheet_dir ) {
-    if ( defined( WP_DEBUG ) && ! WP_DEBUG ) {
+    if ( ! defined( 'WP_DEBUG' ) || ( defined( 'WP_DEBUG' ) && ! WP_DEBUG ) ) {
         $stylesheet = $stylesheet_dir . '/style.min.css';
     }
 
