@@ -107,3 +107,11 @@
                 width: 50%;
         }
 }
+
+@media screen and (max-width: 610px) {
+    .posts-navigation,
+    .post-navigation {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}

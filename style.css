@@ -782,6 +782,13 @@ a:hover, a:active {
   width: 50%;
 }
 
+@media screen and (max-width: 610px) {
+  .posts-navigation,
+.post-navigation {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1052,8 +1059,8 @@ object {
 /*--------------------------------------------------------------
 ## Audio
 --------------------------------------------------------------*/
-.mejs-audio {
-  width: 580px;
+.audio-container {
+  width: 580px !important;
 }
 
 /*--------------------------------------------------------------
@@ -1084,6 +1091,14 @@ object {
   margin-right: 1rem;
 }
 
+@media screen and (max-width: 610px) {
+  .entry-header,
+.site-header,
+.site-footer {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/

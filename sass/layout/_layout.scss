@@ -20,3 +20,12 @@
 }
 
 .page_item { margin-right: 1rem; }
+
+@media screen and (max-width: 610px) {
+    .entry-header,
+    .site-header,
+    .site-footer {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
